@@ -7,7 +7,10 @@ recomendaciones de negocio accionables.
 **Conecta directamente con el proyecto RetailBI** de este portafolio —
 usa el mismo dominio de negocio y estructura de datos.
 
+
 ---
+<img width="640" height="371" alt="image" src="https://github.com/user-attachments/assets/89da44da-3c39-47ea-853f-cdc528875c8b" />
+
 
 ## 🎯 Problema de Negocio
 
@@ -45,6 +48,8 @@ campañas de retención a tiempo.
 **Revenue recuperable (retención 30%): COP ~348M**
 
 ---
+
+
 
 ## 🧠 Features de Mayor Impacto
 
