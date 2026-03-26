@@ -62,36 +62,6 @@ campañas de retención a tiempo.
 
 ---
 
-## 🏗️ Estructura del Proyecto
-
-```
-churn-predictor/
-│
-├── 01_generar_datos.py     → Genera dataset de 2,000 clientes
-├── 02_eda_features.py      → Análisis exploratorio orientado a churn
-├── 03_modelo_churn.py      → Pipeline ML completo (3 modelos)
-│
-├── data/
-│   ├── clientes_churn.csv      → Dataset con features y etiqueta
-│   └── predicciones_churn.csv  → Probabilidades + segmento de riesgo
-│
-├── modelos/
-│   └── modelo_churn_random_forest.pkl  → Modelo serializado
-│
-└── graficas/
-    ├── 01_distribucion_churn.png
-    ├── 02_rfm_distribucion.png
-    ├── 03_correlacion_churn.png
-    ├── 04_boxplots_features.png
-    ├── 05_churn_ciudad_canal.png
-    ├── 06_comparacion_modelos.png
-    ├── 07_curva_roc.png
-    ├── 08_matriz_confusion.png
-    ├── 09_feature_importance.png
-    └── 10_segmentacion_riesgo.png
-```
-
----
 
 ## ⚙️ Pipeline de Machine Learning
 
@@ -111,44 +81,6 @@ retail            Engineering         ColumnTransformer      LR / RF / XGB
 
 ---
 
-## ✅ Buenas Prácticas Aplicadas
-
-- **Pipeline scikit-learn** — el preprocesador es parte del pipeline, no puede haber data leakage
-- **StratifiedKFold** — el desbalance de clases (~30% churn) se respeta en cada fold
-- **`class_weight='balanced'`** en LR y RF — manejo explícito del desbalance
-- **`scale_pos_weight`** en XGBoost — equivalente al anterior para boosting
-- **Threshold óptimo por F1** — no asumir que 0.5 es siempre el corte correcto
-- **`train_test_split` primero** — el test set nunca toca el preprocesamiento
-- **Métricas múltiples** — AUC, F1, Precision y Recall (no solo Accuracy)
-- **Interpretabilidad** — feature importance para explicar el modelo al negocio
-- **Segmentación accionable** — probabilidades convertidas a segmentos de riesgo claros
-
----
-
-## 🚀 Cómo Ejecutar
-
-```bash
-# 1. Clonar
-git clone https://github.com/ricardosequeda/churn-predictor
-cd churn-predictor
-
-# 2. Instalar dependencias
-pip install pandas numpy scikit-learn xgboost matplotlib seaborn joblib
-
-# 3. Generar dataset
-python 01_generar_datos.py
-
-# 4. EDA y análisis de features
-python 02_eda_features.py
-
-# 5. Entrenar modelos y obtener predicciones
-python 03_modelo_churn.py
-
-# Las gráficas se generan en ./graficas/
-# Las predicciones en ./data/predicciones_churn.csv
-```
-
----
 
 ## 🔗 Conexión con el Portafolio
 
