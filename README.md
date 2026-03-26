@@ -99,6 +99,7 @@ Este proyecto es parte de una serie de 4 proyectos conectados:
 | 4 | **ChurnPredictor** ← | Usa la misma estructura de clientes del RetailBI |
 
 ---
+<img width="650" height="490" alt="image" src="https://github.com/user-attachments/assets/92a914cc-13eb-4913-8ad8-6fce1adfb15b" />
 
 ## 👤 Autor
 
